@@ -1,0 +1,32 @@
+[package]
+name = "kinopub"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11.8", features = ["json", "stream"] }
+serde = { version = "1", features=["derive"] }
+serde_json = "1"
+env_logger = "0.9"
+log = "0.4"
+anyhow = "1"
+url = "2.2"
+async-trait = "0.1"
+tui = "0.16"
+termion = "1.5"
+thiserror = "1"
+chrono = { version = "0.4", features = ["serde"] }
+dirs = "4.0"
+serde_struct_wrapper = "0.3"
+indicatif = "0.17.0-beta.1"
+futures-util = "0.3"
+futures = "0.3"
+clap = { version = "3", features = ["derive", "default"] }
+simple_logger = { version = "1.16", features = ["default"] }
+dialoguer = "0.9"
+percent-encoding = "2.1"
+cli-table = { version="0.4", features=["default"] }
+machine-uid = "0.2"
+sys-info = "0.9"
+humansize = "2.1.0"
